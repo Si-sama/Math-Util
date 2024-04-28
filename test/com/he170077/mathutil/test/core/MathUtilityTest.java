@@ -33,7 +33,7 @@ public class MathUtilityTest {
         // hàm giúp so sánh 2 giá trị nào đó giống nhau không ? trong test case này
         Assert.assertEquals(1, MathUtility.getFactorial(1));
         Assert.assertEquals(720, MathUtility.getFactorial(6));
-        Assert.assertEquals(4, MathUtility.getFactorial(4));
+        Assert.assertEquals(24, MathUtility.getFactorial(4));
 
     }
         //đưa data sai lệch --> kì vọng sai lệch xuất hiện
