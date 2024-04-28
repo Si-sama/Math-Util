@@ -10,7 +10,7 @@
 ***
 ***
 
-![test cú pháp của mark down.!](https://github.com/Si-sama/Math-Util/tree/main/imgs)
+![test cú pháp của mark down.!](https://github.com/Si-sama/Math-Util/blob/main/imgs/221937.gif)
 
 
 
