@@ -18,18 +18,36 @@ public class MathUtility {
     // không có giai thùa âm , 0!=1!=1
     // 20 giai thừa là 18 con số 0 , vừa đủ kiểu long , nhiều hơn sẽ tràn 
     // quy ước : tính giai thừa trong khoảng từ 1....20.
-    public static long getFactorial(int n) {
-        if (n < 0 || n > 20) {
-            throw new IllegalArgumentException("Invalid Argument.N must"
-                    + " between 0 to 20");
+//    public static long getFactorial(int n) {
+//        if (n < 0 || n > 20) {
+//            throw new IllegalArgumentException("Invalid Argument.N must"
+//                    + " between 0 to 20");
+//        }
+//        if (n == 0 || n == 1) {
+//            return 1;
+//        }
+//        long product = 1; // tích nhân dồn 
+//        for (int i = 2; i <= n; i++) {
+//            product = product * i;
+//        }
+//        return product;
+//    }
+    
+    
+     public static long getFactorial(int n) {
+//        if (n < 0 || n > 20) {
+//            throw new IllegalArgumentException("Invalid Argument.N must"
+//                    + " between 0 to 20");
+//        }
+        if(n<0|| n >20) {
+            throw  new IllegalArgumentException("N must be between 0...20");
         }
+        
         if (n == 0 || n == 1) {
             return 1;
         }
-        long product = 1; // tích nhân dồn 
-        for (int i = 2; i <= n; i++) {
-            product = product * i;
-        }
-        return product;
+        return  n*getFactorial(n-1);
     }
+    
+    
 }
